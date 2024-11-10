@@ -4,7 +4,7 @@ const app = express();
 
 app.get("/*", (req, res, next) => {
   // Construct the target URL with the request path
-  const targetUrl = "https://bloxdio2.com/" + req.path;
+  const targetUrl = "https://gooberroyale.winterpixel.io" + req.path;
 
   https.get(targetUrl, (resp) => {
     res.statusCode = resp.statusCode; // Set the status code to match the response

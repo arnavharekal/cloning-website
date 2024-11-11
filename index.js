@@ -4,7 +4,7 @@ const app = express();
 
 app.get("/*", (req, res, next) => {
   // Construct the target URL with the request path
-  const targetUrl = "https://cookieclicker.ee" + req.path;
+  const targetUrl = "https://chatgpt.com" + req.path;
 
   https.get(targetUrl, (resp) => {
     res.statusCode = resp.statusCode; // Set the status code to match the response

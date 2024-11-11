@@ -4,7 +4,7 @@ const app = express();
 
 app.get("/*", (req, res, next) => {
   // Construct the target URL with the request path
-  const targetUrl = "https://www.coolmathgames.com" + req.path;
+  const targetUrl = "https://www.construct.net/en/free-online-games/tag-39/play" + req.path;
 
   https.get(targetUrl, (resp) => {
     res.statusCode = resp.statusCode; // Set the status code to match the response
